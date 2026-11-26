@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andrew Laing — Commercial Strategy, Governance &amp; Executive Leadership</title>
+  <meta name="description" content="Essays on commercial strategy, capital allocation, tax architecture, and operational governance alongside the executive profile and public record of Andrew Laing (Brisbane, Australia)." />
+  <link rel="canonical" href="https://YOUR-DOMAIN-HERE.com.au/" />
+
+  <!-- Schema.org JSON-LD for Google Search & Knowledge Graph -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://YOUR-DOMAIN-HERE.com.au/#website",
+        "url": "https://YOUR-DOMAIN-HERE.com.au/",
+        "name": "Andrew Laing",
+        "description": "Commercial commentary, operational governance essays, and executive profile of Andrew Laing.",
+        "inLanguage": "en-AU"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://YOUR-DOMAIN-HERE.com.au/#person",
+        "name": "Andrew Laing",
+        "jobTitle": "Commercial & Operational Leader | Non-Executive Director",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Brisbane",
+          "addressRegion": "QLD",
+          "addressCountry": "AU"
+        },
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "The University of Queensland"
+          }
+        ],
+        "hasCredential": [
+          "Certified Practising Accountant (CPA)",
+          "Registered Tax Agent",
+          "Bachelor of Business (Professional Accounting)",
+          "Master of Business Administration (Candidate, UQ)"
+        ],
+        "knowsAbout": [
+          "Commercial Strategy",
+          "Operational Governance",
+          "Driver-Based Budgeting",
+          "Working Capital & Cash Conversion Cycle",
+          "Australian Tax Reform",
+          "Board Governance"
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts: Playfair Display & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg-primary: #0d0e11;
+      --bg-surface: #15171c;
+      --bg-elevated: #1c1f26;
+      --border-subtle: #262930;
+      --border-strong: #363a45;
+      --text-primary: #f1f3f5;
+      --text-secondary: #a0a6b2;
+      --text-muted: #6e7582;
+      --accent-crimson: #9e2a2b;
+      --accent-crimson-hover: #b83233;
+      --accent-gold: #c5a059;
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Layout Container */
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Navigation */
+    header {
+      border-bottom: 1px solid var(--border-subtle);
+      background: rgba(13, 14, 17, 0.92);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.15rem 0;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .brand {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: var(--text-primary);
+      cursor: pointer;
+    }
+
+    .brand span {
+      color: var(--accent-crimson);
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-btn {
+      background: none;
+      border: none;
+      color: var(--text-secondary);
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      padding-bottom: 0.25rem;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s ease;
+    }
+
+    .nav-btn:hover {
+      color: var(--text-primary);
+    }
+
+    .nav-btn.active {
+      color: var(--text-primary);
+      border-bottom-color: var(--accent-crimson);
+    }
+
+    /* Views */
+    .view {
+      display: none;
+      padding: 3.5rem 0 5rem;
+      animation: fadeIn 0.25s ease;
+    }
+
+    .view.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Hero Section */
+    .hero {
+      padding-bottom: 3rem;
+      border-bottom: 1px solid var(--border-subtle);
+      margin-bottom: 3rem;
+    }
+
+    .eyebrow {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--accent-gold);
+      font-weight: 600;
+      margin-bottom: 0.85rem;
+    }
+
+    h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(2.1rem, 4vw, 3rem);
+      font-weight: 600;
+      line-height: 1.18;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-sub {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      max-width: 720px;
+      font-weight: 300;
+    }
+
+    /* Filter Pills */
+    .filters {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .filter-pill {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+      padding: 0.4rem 0.9rem;
+      border-radius: 4px;
+      font-size: 0.82rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .filter-pill:hover, .filter-pill.active {
+      background: var(--bg-elevated);
+      border-color: var(--accent-crimson);
+      color: var(--text-primary);
+    }
+
+    /* Essay Cards */
+    .essay-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .essay-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      padding: 1.85rem;
+      border-radius: 6px;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+      cursor: pointer;
+    }
+
+    .essay-card:hover {
+      border-color: var(--border-strong);
+      transform: translateY(-2px);
+    }
+
+    .card-meta {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.65rem;
+    }
+
+    .card-tag {
+      color: var(--accent-gold);
+      font-weight: 600;
+    }
+
+    .essay-card h2 {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      line-height: 1.3;
+    }
+
+    .essay-card p {
+      color: var(--text-secondary);
+      font-size: 0.96rem;
+      margin-bottom: 1.1rem;
+    }
+
+    .read-link {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .essay-card:hover .read-link {
+      color: var(--accent-crimson-hover);
+    }
+
+    /* Full Essay Reader */
+    .article-reader {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .back-btn {
+      background: none;
+      border: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+      padding: 0.45rem 0.9rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      margin-bottom: 2rem;
+      display: inline-block;
+    }
+
+    .back-btn:hover {
+      border-color: var(--text-secondary);
+      color: var(--text-primary);
+    }
+
+    .article-body h1 {
+      font-size: clamp(1.9rem, 3.5vw, 2.5rem);
+      margin-bottom: 0.75rem;
+    }
+
+    .article-byline {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      padding-bottom: 1.75rem;
+      border-bottom: 1px solid var(--border-subtle);
+      margin-bottom: 2rem;
+    }
+
+    .article-body h3 {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      margin: 2.25rem 0 0.85rem;
+      color: var(--text-primary);
+    }
+
+    .article-body p {
+      color: #d5d9e2;
+      margin-bottom: 1.25rem;
+      font-size: 1.03rem;
+      line-height: 1.78;
+    }
+
+    .article-body ul, .article-body ol {
+      margin: 1rem 0 1.5rem 1.4rem;
+      color: #d5d9e2;
+    }
+
+    .article-body li {
+      margin-bottom: 0.65rem;
+      line-height: 1.7;
+    }
+
+    .formula-box {
+      background: var(--bg-surface);
+      border-left: 3px solid var(--accent-crimson);
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      font-family: monospace;
+      font-size: 1rem;
+      color: var(--text-primary);
+    }
+
+    /* Executive Profile / CV */
+    .cv-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border-subtle);
+      margin-bottom: 2.5rem;
+    }
+
+    .btn-primary {
+      background: var(--accent-crimson);
+      color: #fff;
+      border: none;
+      padding: 0.65rem 1.25rem;
+      border-radius: 4px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-crimson-hover);
+    }
+
+    .cv-section {
+      margin-bottom: 2.75rem;
+    }
+
+    .cv-section-title {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--accent-gold);
+      font-weight: 600;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.35rem;
+    }
+
+    .cv-item {
+      margin-bottom: 1.65rem;
+    }
+
+    .cv-item-header {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .cv-role {
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: var(--text-primary);
+    }
+
+    .cv-org {
+      color: var(--text-secondary);
+      font-weight: 400;
+    }
+
+    .cv-date {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .cv-list {
+      margin-left: 1.2rem;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+
+    .cv-list li {
+      margin-bottom: 0.45rem;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .info-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      padding: 1.4rem;
+      border-radius: 6px;
+    }
+
+    .info-box h4 {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      margin-bottom: 0.65rem;
+    }
+
+    /* The Record */
+    .record-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-left: 3px solid var(--accent-gold);
+      padding: 2rem;
+      border-radius: 6px;
+      max-width: 760px;
+    }
+
+    .record-box h2 {
+      font-family: var(--font-serif);
+      font-size: 1.55rem;
+      margin-bottom: 1rem;
+    }
+
+    .record-box p {
+      color: #d5d9e2;
+      margin-bottom: 1.15rem;
+      font-size: 0.98rem;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 2.5rem 0;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    /* Print Styles for 2-Page Executive PDF CV */
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #111111 !important;
+        font-size: 10.5pt;
+      }
+      header, footer, .no-print {
+        display: none !important;
+      }
+      .view {
+        display: none !important;
+        padding: 0 !important;
+      }
+      #view-cv {
+        display: block !important;
+      }
+      .cv-section-title {
+        color: #7a1c1d !important;
+        border-bottom-color: #cccccc !important;
+      }
+      .cv-role {
+        color: #000000 !important;
+      }
+      .cv-org, .cv-list, .hero-sub {
+        color: #333333 !important;
+      }
+      .info-box {
+        background: #f9f9f9 !important;
+        border: 1px solid #dddddd !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container nav-inner">
+      <div class="brand" onclick="switchView('essays')">Andrew Laing<span>.</span></div>
+      <nav>
+        <button class="nav-btn active" data-target="essays" onclick="switchView('essays')">Essays &amp; Commentary</button>
+        <button class="nav-btn" data-target="cv" onclick="switchView('cv')">Executive Profile</button>
+        <button class="nav-btn" data-target="record" onclick="switchView('record')">The Record</button>
+        <button class="nav-btn" data-target="contact" onclick="switchView('contact')">Contact</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- VIEW 1: ESSAYS & COMMENTARY -->
+    <section id="view-essays" class="view active">
+      <div id="essay-list-container">
+        <div class="hero">
+          <div class="eyebrow">Brisbane, Australia &bull; Commercial Strategy &amp; Governance</div>
+          <h1>First-principles thinking on margins, capital allocation, and operational execution.</h1>
+          <p class="hero-sub">Long-form essays examining how businesses actually generate cash, why conventional budgeting fails, and what structural incentives reveal about governance and tax architecture.</p>
+        </div>
+
+        <div class="filters">
+          <button class="filter-pill active" onclick="filterEssays('all', this)">All Essays (5)</button>
+          <button class="filter-pill" onclick="filterEssays('Commercial Mechanics', this)">Commercial Mechanics</button>
+          <button class="filter-pill" onclick="filterEssays('Business Models', this)">Business Models</button>
+          <button class="filter-pill" onclick="filterEssays('Tax & Policy', this)">Tax &amp; Policy</button>
+        </div>
+
+        <div class="essay-grid" id="essay-cards"></div>
+      </div>
+
+      <!-- Full Article Reader -->
+      <div id="essay-reader-container" class="article-reader" style="display:none;">
+        <button class="back-btn" onclick="closeEssay()">&larr; Back to All Essays</button>
+        <article class="article-body" id="article-content"></article>
+      </div>
+    </section>
+
+    <!-- VIEW 2: EXECUTIVE PROFILE (VIRTUAL CV) -->
+    <section id="view-cv" class="view">
+      <div class="cv-header">
+        <div>
+          <div class="eyebrow">Executive Profile &amp; Curriculum Vitae</div>
+          <h1>Andrew Laing</h1>
+          <p class="hero-sub">Commercial Operations Leader &bull; Virtual CFO &amp; Advisory &bull; Non-Executive Board Director<br/>Brisbane, Queensland, Australia</p>
+        </div>
+        <button class="btn-primary no-print" onclick="window.print()">Print / Save PDF CV</button>
+      </div>
+
+      <div class="cv-section">
+        <div class="cv-section-title">Executive Positioning</div>
+        <p style="color:#d5d9e2;">Commercial and operational leader combining deep accounting, tax, and financial modelling rigour with hands-on operational delivery, process engineering, and board governance. Experienced in scaling professional service lines, leading operational delivery committees, advising SMEs and mid-market enterprises on margin expansion and cash conversion, and providing financial and risk oversight on for-purpose boards.</p>
+      </div>
+
+      <div class="cv-section">
+        <div class="cv-section-title">Leadership &amp; Commercial Experience</div>
+
+        <div class="cv-item">
+          <div class="cv-item-header">
+            <div><span class="cv-role">Senior Manager — Business Analysis, Operations &amp; vCFO Advisory</span> <span class="cv-org">| Hoffman Kelly Chartered Accountants</span></div>
+            <div class="cv-date">Brisbane, QLD</div>
+          </div>
+          <ul class="cv-list">
+            <li>Chair/lead the firm's <strong>Operational Delivery Committee</strong>, partnering directly with firm directors on internal strategy, workflow architecture, capacity planning, and process improvement.</li>
+            <li>Spearheaded the design and commercial rollout of the firm's <strong>Virtual CFO (vCFO)</strong> advisory service line, transitioning clients from historical compliance to driver-based forecasting and margin governance.</li>
+            <li>Lead complex business analysis, cash conversion optimisation, and multi-entity structuring for construction, property development, healthcare, and professional services clients.</li>
+            <li>Mentor senior and intermediate accounting professionals on commercial judgement, client advisory, and operational execution.</li>
+          </ul>
+        </div>
+
+        <div class="cv-item">
+          <div class="cv-item-header">
+            <div><span class="cv-role">Co-Founder &amp; Operational Partner</span> <span class="cv-org">| Industry HQ &amp; Her Roar</span></div>
+            <div class="cv-date">Queensland</div>
+          </div>
+          <ul class="cv-list">
+            <li>Built, scaled, and led commercial operations, financial management, licensing structures, and lease negotiations across multi-site ventures.</li>
+            <li>Designed unit-economic pricing models, operational SOPs, and vendor procurement frameworks to support sustainable commercial scaling.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cv-section">
+        <div class="cv-section-title">Board Governance &amp; Non-Executive Directorships</div>
+
+        <div class="cv-item">
+          <div class="cv-item-header">
+            <div><span class="cv-role">Board Director &amp; Treasurer</span> <span class="cv-org">| Queensland Injectors Health Network (QuIHN)</span></div>
+            <div class="cv-date">Current</div>
+          </div>
+          <ul class="cv-list">
+            <li>Provide financial strategy, audit oversight, and risk governance through the Finance, Risk and Audit Subcommittee (FRASC) for a statewide health services organisation.</li>
+          </ul>
+        </div>
+
+        <div class="cv-item">
+          <div class="cv-item-header">
+            <div><span class="cv-role">Board Member</span> <span class="cv-org">| Queensland Stoma Association (QSA)</span></div>
+            <div class="cv-date">Current</div>
+          </div>
+          <ul class="cv-list">
+            <li>Contribute to board governance, financial stewardship, and operational monitoring under the federal Stoma Appliance Scheme (SAS).</li>
+          </ul>
+        </div>
+
+        <div class="cv-item">
+          <div class="cv-item-header">
+            <div><span class="cv-role">Governance &amp; Advisory Contributor</span> <span class="cv-org">| Queensland Injectors Voice for Advocacy and Action (QuIVAA)</span></div>
+            <div class="cv-date">Current</div>
+          </div>
+          <ul class="cv-list">
+            <li>Advise on financial controls, transaction governance, and inter-organisational MOU frameworks.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cv-section">
+        <div class="cv-section-title">Education, Credentials &amp; Core Capabilities</div>
+        <div class="grid-2">
+          <div class="info-box">
+            <h4>Qualifications &amp; Licences</h4>
+            <ul class="cv-list">
+              <li><strong>Master of Business Administration (MBA)</strong> — In Progress, The University of Queensland</li>
+              <li><strong>Certified Practising Accountant (CPA)</strong> — CPA Australia</li>
+              <li><strong>Registered Tax Agent</strong> — Tax Practitioners Board</li>
+              <li><strong>Bachelor of Business (Professional Accounting)</strong></li>
+              <li>Extensive executive coaching and leadership development</li>
+            </ul>
+          </div>
+          <div class="info-box">
+            <h4>Executive Capabilities</h4>
+            <ul class="cv-list">
+              <li>P&amp;L Ownership &amp; Driver-Based Budgeting</li>
+              <li>Working Capital &amp; Cash Conversion Optimisation</li>
+              <li>Lean Process Redesign &amp; Operational Audits (DMAIC / FMEA)</li>
+              <li>Board Financial Governance, Audit &amp; Risk Controls</li>
+              <li>Commercial Pricing Architecture &amp; M&amp;A Due Diligence</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 3: THE RECORD -->
+    <section id="view-record" class="view">
+      <div class="hero">
+        <div class="eyebrow">Transparency &amp; Public Record</div>
+        <h1>The Record</h1>
+        <p class="hero-sub">A direct, factual account of my professional history, permanent exit from public accounting practice, and transition into commercial and operational leadership.</p>
+      </div>
+
+      <div class="record-box">
+        <h2>Public Practice Cessation &amp; Regulatory History</h2>
+        <p>In the interest of complete transparency for prospective boards, executive partners, and stakeholders conducting due diligence, this page sets out the factual record regarding my former public accounting practice.</p>
+        <p><strong>Permanent Cessation of Public Practice (June 2021):</strong> On 7 June 2021, I permanently ceased operating as a public accounting practitioner and exited principal practice ownership.</p>
+        <p><strong>Completion of Obligations:</strong> Following historical regulatory matters reviewed by CPA Australia relating to that earlier period in public practice, I cooperated fully with the professional body, completed all required continuing professional development and ethics coursework, and satisfied every administrative and financial obligation in full.</p>
+        <p><strong>Focus Moving Forward:</strong> Closing that chapter reinforced a core conviction that shapes all of my work today: robust governance, clear decision rights, and front-end operational controls matter infinitely more than retrospective compliance. Since stepping away from principal practice, my career has focused exclusively on commercial strategy, internal operational leadership, virtual CFO advisory, MBA studies at The University of Queensland, and non-executive board governance.</p>
+      </div>
+    </section>
+
+    <!-- VIEW 4: CONTACT -->
+    <section id="view-contact" class="view">
+      <div class="hero">
+        <div class="eyebrow">Enquiries &amp; Direct Contact</div>
+        <h1>Connect</h1>
+        <p class="hero-sub">Available for General Manager (GM), Chief Operating Officer (COO), senior commercial leadership, fractional CFO advisory, and non-executive board appointments.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="info-box">
+          <h4>Direct Correspondence</h4>
+          <p style="color:var(--text-secondary); font-size:0.95rem; margin-bottom:1rem;">Based in Brisbane, Queensland, working with organisations across Australia.</p>
+          <p style="font-size:0.95rem;"><strong>Email:</strong> <a href="mailto:andrew.laing02@gmail.com" style="color:var(--accent-gold);">andrew.laing02@gmail.com</a></p>
+          <p style="font-size:0.95rem; margin-top:0.5rem;"><strong>LinkedIn:</strong> <a href="https://au.linkedin.com/in/andrewlaing02" target="_blank" rel="noopener" style="color:var(--accent-gold);">linkedin.com/in/andrewlaing02</a></p>
+        </div>
+        <div class="info-box">
+          <h4>Areas of Focus</h4>
+          <ul class="cv-list">
+            <li>Executive Operational Leadership (GM / COO)</li>
+            <li>Commercial Turnaround &amp; Margin Expansion</li>
+            <li>Driver-Based Financial Modelling &amp; vCFO Advisory</li>
+            <li>Non-Executive Board &amp; Audit Committee Roles</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>&copy; 2026 Andrew Laing. Brisbane, Queensland, Australia.</div>
+      <div>Commercial Strategy &bull; Operational Governance &bull; Executive Profile</div>
+    </div>
+  </footer>
+
+  <script>
+    const essays = [
+      {
+        id: "top-line-growth-kills-cash",
+        category: "Commercial Mechanics",
+        readTime: "5 min read",
+        title: "Why Top-Line Revenue Growth Kills Cash-Constrained Businesses",
+        summary: "Rapid top-line expansion is one of the fastest ways to push a profitable enterprise into insolvency. How the Cash Conversion Cycle (CCC) and overtrading turn revenue growth into a liquidity trap.",
+        body: `
+          <p>In most boardrooms, a 30% surge in revenue is treated as an unmitigated triumph. Yet in commercial reality, rapid top-line expansion is one of the fastest ways to push a profitable, cash-constrained enterprise into insolvency.</p>
+          <p>Operators routinely confuse accounting profit with liquidity. When revenue scales faster than the underlying cash engine can fund it—a trap commercial lenders call <strong>overtrading</strong>—every new contract or customer order consumes more cash upfront than the business generates from completed sales. The P&amp;L looks healthier every month right up until the overdraft hits its ceiling, suppliers demand cash on delivery, and payroll cannot clear.</p>
+          <h3>1. The Mechanics of the Cash Conversion Cycle (CCC)</h3>
+          <p>To understand why growth drains liquidity, look at the <strong>Cash Conversion Cycle</strong>—the exact number of days between paying cash out for inputs and collecting cash back from customers:</p>
+          <div class="formula-box">CCC = DIO + DSO &minus; DPO</div>
+          <ul>
+            <li><strong>Days Inventory Outstanding (DIO):</strong> How long cash sits locked in raw materials, stock, or unbilled work-in-progress (WIP) before a sale is invoiced.</li>
+            <li><strong>Days Sales Outstanding (DSO):</strong> How many days customers take to pay after an invoice is issued.</li>
+            <li><strong>Days Payable Outstanding (DPO):</strong> How many days suppliers allow you to hold cash before paying their bills.</li>
+          </ul>
+          <p>Whenever DIO + DSO exceeds DPO, the business has a <strong>positive cash conversion cycle</strong>—meaning every single dollar of revenue requires the business to finance an upfront working-capital gap out of its own pocket. If your cycle is 60 days, growing revenue by $200,000 a month forces you to fund two full months of additional payroll, materials, and supplier payments before a cent of that new revenue clears your account.</p>
+          <h3>2. Why Growth Multiplies the Working-Capital Trap</h3>
+          <ol>
+            <li><strong>Upfront cash outlays scale immediately; collections lag behind:</strong> Labour, subcontractors, inventory, and freight must be paid on weekly or 14-to-30-day cycles, whereas enterprise and trade customers routinely stretch payment terms to 45 or 60+ days.</li>
+            <li><strong>Bigger customers demand worse terms:</strong> Winning larger tier-one contracts often drives top-line growth, yet tier-one buyers impose strict 60-day end-of-month payment runs and retention clauses—quietly stretching DSO across the ledger.</li>
+            <li><strong>Tax liabilities crystallise on invoice, not collection:</strong> Under accrual accounting, GST and PAYG obligations accrue when invoices and payroll are processed, creating hard quarterly or monthly ATO cash demands before customer receipts have arrived.</li>
+            <li><strong>Net margin cannot outrun working-capital velocity:</strong> A business earning an 8% net profit margin cannot self-fund 40% annual revenue growth if every $1.00 of new sales requires $0.25 of additional working capital.</li>
+          </ol>
+          <h3>3. How Disciplined Operators Engineer Cash-Funded Growth</h3>
+          <ul>
+            <li><strong>Compress DSO aggressively:</strong> Bill on milestone or completion rather than month-end, require upfront deposits on custom or project work, and automate debtor follow-ups before invoices turn overdue.</li>
+            <li><strong>Shrink DIO and WIP lockup:</strong> Eliminate slow-moving stock lines and enforce strict weekly billing cut-offs so completed hours or materials never sit unbilled on a project ledger.</li>
+            <li><strong>Align DPO with collection cycles:</strong> Negotiate 45-to-60-day terms with core suppliers so trade credit helps finance growth rather than draining cash reserves.</li>
+            <li><strong>Model the funding gap before signing new volume:</strong> Run a rolling 13-week cash flow forecast that stress-tests new contracts against peak cash outflows—and, where necessary, deliberately pace top-line growth to match available working capital.</li>
+          </ul>
+          <h3>The Executive Takeaway</h3>
+          <p>Revenue growth is an accelerator—it amplifies whatever financial mechanics already exist inside the business. If your cash conversion cycle is tight and your unit margins are strong, growth compounds enterprise value. If your working capital is loose and cash-constrained, chasing top-line volume does not build a bigger company; it simply builds a faster path to running out of cash.</p>
+        `
+      },
+      {
+        id: "commercial-budgets-fail",
+        category: "Commercial Mechanics",
+        readTime: "5 min read",
+        title: "Why Most Commercial Budgets Fail: Moving From Static Scorecards to Driver-Based Execution",
+        summary: "When a budget is simply last year's Profit & Loss statement adjusted by an arbitrary percentage, it documents an aspiration without mapping the operational levers managers control on a Tuesday morning.",
+        body: `
+          <p>Every year across construction, trades, healthcare, and professional services, executive teams spend weeks locked in rooms building an annual budget. Twelve months later, the same conversation repeats: revenue came close to target, everyone worked harder than expected, yet net profit missed by 15% or 20%—and nobody can point cleanly to why.</p>
+          <p>The problem is rarely a lack of financial discipline. It is that most commercial budgets are built as static accounting scorecards rather than operational models.</p>
+          <h3>The Four Structural Flaws of Traditional Budgeting</h3>
+          <ul>
+            <li><strong>Incremental guesswork:</strong> Taking last year's revenue and overheads and adding 5% or 10% bakes historical inefficiencies directly into the new plan while ignoring changes in pricing power, input costs, or capacity limits.</li>
+            <li><strong>Disconnection from operational drivers:</strong> A P&amp;L line item showing "$3.9M in direct costs" tells a project manager or clinical lead nothing. Operators manage billable utilisation, charge-out rates, crew productivity, wastage, and order volume—not general ledger codes.</li>
+            <li><strong>Mix blindness:</strong> Static top-line targets treat every dollar of revenue as equal. In reality, subtle shifts in product, customer, or project mix—such as winning more low-margin volume while higher-margin work slips—can hollow out gross profit even when total sales hit target.</li>
+            <li><strong>Profit without cash or working capital:</strong> Many commercial budgets stop at EBITDA or net profit, ignoring debtor days, work-in-progress (WIP) lockup, and inventory turns.</li>
+          </ul>
+          <h3>How Driver-Based Budgeting Fixes the Disconnect</h3>
+          <p>High-performing commercial teams flip the sequence. Instead of starting with a desired bottom-line dollar figure and working backward into general ledger guesses, they build from the operational drivers that actually generate revenue and consume resources:</p>
+          <ol>
+            <li><strong>Volume and demand drivers:</strong> Leads, conversion rates, active client count, project starts, or units shipped—owned directly by sales and commercial leads.</li>
+            <li><strong>Rate and efficiency drivers:</strong> Average selling price, billable utilisation, labour hours per unit, and procurement unit costs—owned by operational and delivery managers.</li>
+            <li><strong>Financial outputs:</strong> Revenue, gross margin, overhead absorption, and free cash flow—calculated automatically when operational assumptions move.</li>
+          </ol>
+          <h3>Turning a Forecast Into an Operating Cadence</h3>
+          <ul>
+            <li><strong>Monthly rolling reforecasts:</strong> Keep a live 12-month forward view updated monthly with actual pipeline, staffing capacity, and cost realities rather than treating a budget locked in May as gospel the following April.</li>
+            <li><strong>Pre-agreed trigger rules:</strong> Define operational triggers in advance—for example, what happens to discretionary overhead or hiring if utilisation dips below a set threshold for two consecutive months.</li>
+            <li><strong>Unit-level ownership:</strong> Make operational managers accountable for the 3 to 5 drivers they directly influence, rather than holding them responsible for corporate overhead allocations they cannot control.</li>
+          </ul>
+          <h3>The Executive Takeaway</h3>
+          <p>A budget should never be a compliance exercise performed to satisfy a bank or a board pack. Done properly, it is an operational contract that aligns pricing, capacity, working capital, and human effort around how the business actually makes money.</p>
+        `
+      },
+      {
+        id: "operating-without-safety-net",
+        category: "Business Models",
+        readTime: "6 min read",
+        title: "Operating Without a Safety Net: What Organised Crime Reveals About First-Principles Business Strategy",
+        summary: "Strip away every state-backed guarantee—courts, police, clearing houses, and insolvency law—and you are left with a ruthless commercial stress test in decentralised franchising and reputation equity.",
+        body: `
+          <p>Most business strategy is written on the assumption of an invisible subsidy: the rule of law. When a conventional enterprise signs a supply agreement, extends trade credit, or expands into a new territory, it relies on external institutions to price and absorb risk. Courts enforce contracts. Police protect physical inventory. Central banks settle transactions without anyone carrying a firearm.</p>
+          <p>Strip away every one of those state-backed guarantees, and you are left with the operating environment of organised crime. Examining illicit syndicates through a commercial lens is neither an endorsement nor a moral equivalence—it is a stress test of which organisational mechanics survive when every counterparty has an incentive to defect and zero recourse to a commercial court.</p>
+          <h3>1. Contract Enforcement Without Courts: Reputation as Balance-Sheet Equity</h3>
+          <p>In legitimate commerce, trust is outsourced to paper. In an illicit market, written contracts are liabilities—they are evidence. Consequently, syndicates solve the commitment problem through <strong>credible deterrence</strong> and <strong>intergenerational reputation</strong>.</p>
+          <p>Seasoned operators treat overt violence as an expensive failure of governance; it attracts state intervention, disrupts logistics, and destroys margin. Mature syndicates rely instead on reputational capital—a family or syndicate name functions identically to a corporate brand or credit rating, signalling that agreements will be honoured and defections priced harshly.</p>
+          <h3>2. Decentralised Franchising and Ring-Fenced Risk</h3>
+          <p>Because information contagion is fatal, successful syndicates rarely operate as rigid, top-down hierarchies. They evolve into <strong>cellular franchise networks</strong>:</p>
+          <ul>
+            <li><strong>Autonomous operating units:</strong> Local cells manage day-to-day distribution, pricing, and street-level risk independently.</li>
+            <li><strong>Royalty and brand licensing:</strong> Leadership controls wholesale supply, cross-border logistics, and the overarching brand umbrella, collecting a predictable margin spread without micromanaging retail execution.</li>
+            <li><strong>Asymmetric liability:</strong> If a retail cell collapses, the loss is quarantined. Capital and leadership remain insulated upstream.</li>
+          </ul>
+          <h3>3. Capital Allocation and the Treasury Trap</h3>
+          <p>Every legitimate CFO optimises for return on invested capital (ROIC) and liquidity. An illicit CFO faces an inverse problem: <strong>an excess of unbankable cash</strong>. Gross margins can exceed 70%, yet cash sitting in a warehouse earns zero yield and carries catastrophic seizure risk. Retained earnings must be continuously converted into legitimate, cash-generative assets—hospitality venues, construction subcontractors, logistics fleets, and real estate—behaving like an aggressive private equity fund acquiring boring, asset-backed cash flows.</p>
+          <h3>The Commercial Takeaway</h3>
+          <p>Strip away the illegality, and organised crime is a study in <strong>governance under extreme friction</strong>. For legitimate executives, the analytical value lies in asking a simple first-principles question: <em>Which parts of our business model actually create proprietary value, and which parts only survive because external institutions are subsidising our risk?</em></p>
+        `
+      },
+      {
+        id: "tax-without-arbitrage",
+        category: "Tax & Policy",
+        readTime: "6 min read",
+        title: "Tax Without Arbitrage: A Three-Pillar Blueprint for Australian Tax Reform",
+        summary: "Australia does not have a revenue problem; it has an architecture problem. Stripping the code back to a universal consumption tax, minimum-wage income threshold, and cascading asset tax.",
+        body: `
+          <p>Australia does not have a revenue problem. It has an architecture problem. Every year, tens of billions of dollars in productive capital and executive energy are diverted not toward building better businesses, but toward navigating entity structures, boundary exemptions, and bracket creep.</p>
+          <p>Fixing this requires stripping the tax code back to three clean, inescapable bases—Consumption, Income, and Assets—designed so that each pillar reinforces the others and eliminates structural arbitrage by design.</p>
+          <h3>Pillar 1: A Universal Consumption Tax With Zero Exemptions</h3>
+          <p>Twenty-six years of political carve-outs have hollowed out Australia's GST, creating an absurd compliance industry arguing over where one product category ends and another begins. A functional consumption tax should apply at a single flat rate to every single purchase in the economy—no exemptions, no boundary rulings, no special treatment. Regressivity is solved cleanly through Pillar 2 and targeted transfers rather than corrupting prices across the entire economy.</p>
+          <h3>Pillar 2: Income Tax Indexed to the Full-Time Minimum Wage</h3>
+          <p>Taxing individuals earning less than a full-time minimum wage—only to churn that money back through complex offsets and welfare—is administrative theatre. The first dollar of personal income tax should be paid only after an individual earns the equivalent of the full-time National Minimum Wage (currently roughly $52,255 per year), automating bracket-creep protection and removing effective marginal tax traps.</p>
+          <h3>Pillar 3: An Entity-Agnostic Asset Tax</h3>
+          <p>The third pillar replaces stamp duty and entity-specific concessions with a uniform, low-rate annual tax on all net assets—regardless of whether those assets are held by an individual, a proprietary company, a discretionary trust, or a superannuation fund.</p>
+          <h3>Two Design Rules That Make the Asset Tax Work</h3>
+          <ol>
+            <li><strong>CPI-Indexed Deferral for Illiquid Assets:</strong> Owners of illiquid assets (such as farms or early-stage enterprises) can defer the annual levy until sale or transfer, but the deferred balance must be <strong>indexed to CPI each year</strong>. Without CPI indexation, deferred tax becomes an interest-free loan from the Treasury that incentivises hoarding underutilised assets indefinitely.</li>
+            <li><strong>No Look-Through Rules (Taxing Every Legal Layer):</strong> If a holding company owns a commercial property, the property attracts the asset tax inside the company, and the shares attract the asset tax in the hands of the shareholder. Allowing cascading taxation broadens the base so the statutory headline rate can be set dramatically lower, while acting as an automatic complexity tax that encourages simple, transparent ownership without needing bloated anti-avoidance laws.</li>
+          </ol>
+          <h3>The Commercial Dividend</h3>
+          <p>A tax system built on universal consumption, a minimum-wage income threshold, and an entity-agnostic, cascading asset levy abolishes productivity-killing stamp duties, protects low-income earners transparently, and ensures capital competes on commercial merit rather than structural engineering.</p>
+        `
+      },
+      {
+        id: "all-about-margins",
+        category: "Commercial Mechanics",
+        readTime: "4 min read",
+        title: "All About Margins: The Key to a Profitable Business",
+        summary: "Revenue is vanity; margin is operational reality. How incremental pricing discipline, direct cost control, and portfolio focus compound operating profit faster than chasing top-line volume.",
+        body: `
+          <p>Your business margins aren't just accounting metrics—they are the difference between compounding enterprise value and barely surviving. When margins go unmanaged, you leave cash on the table, absorb unnecessary operational risk, and make growth far harder than it needs to be.</p>
+          <h3>Understanding Your Margins</h3>
+          <ul>
+            <li><strong>Gross Profit Margin:</strong> Sales minus Cost of Sales. This measures the underlying profitability of your core operations.</li>
+            <li><strong>Gross Profit Percentage:</strong> Gross Profit Margin divided by Sales. A critical measure of commercial efficiency and pricing power.</li>
+          </ul>
+          <h3>Why Margins Matter More Than Top-Line Revenue</h3>
+          <p>Many operators assume higher sales automatically produce higher profit. In practice, without disciplined margin control, top-line growth often just multiplies operational complexity, working-capital strain, and execution risk for minimal financial return. A 1% improvement in gross margin routinely delivers a greater bottom-line impact than an equivalent increase in sales volume.</p>
+          <h3>How Small Adjustments Compound Into Major Profit Gains</h3>
+          <p>On a baseline of 1,000 units sold at $100 with a $60 unit cost ($40,000 gross profit):</p>
+          <ul>
+            <li><strong>10% Price Increase ($110/unit):</strong> Gross profit jumps to $50,000 (+25% profit gain).</li>
+            <li><strong>10% Price Increase &amp; 10% Direct Cost Reduction ($54/unit):</strong> Gross profit rises to $56,000 (+40% profit gain).</li>
+            <li><strong>10% Volume, 10% Price &amp; 10% Cost Reduction:</strong> Gross profit reaches $61,600 (+54% profit gain).</li>
+          </ul>
+          <h3>Four Levers to Strengthen Operating Margins</h3>
+          <ul>
+            <li><strong>Pricing architecture:</strong> Implement structured, value-aligned price adjustments rather than reactive discounting.</li>
+            <li><strong>Direct cost discipline:</strong> Lower cost of goods sold through tighter procurement, supplier renegotiation, and workflow efficiency.</li>
+            <li><strong>Portfolio focus:</strong> Identify your highest-margin offerings and reallocate commercial resources toward scaling them.</li>
+            <li><strong>Monthly variance reviews:</strong> Track gross margin by product, project, or division monthly so margin slippage is corrected early rather than discovered at year-end.</li>
+          </ul>
+        `
+      }
+    ];
+
+    function renderCards(filter = 'all') {
+      const container = document.getElementById('essay-cards');
+      const filtered = filter === 'all' ? essays : essays.filter(e => e.category === filter);
+      container.innerHTML = filtered.map(essay => `
+        <div class="essay-card" onclick="openEssay('${essay.id}')">
+          <div class="card-meta">
+            <span class="card-tag">${essay.category}</span>
+            <span>&bull;</span>
+            <span>${essay.readTime}</span>
+          </div>
+          <h2>${essay.title}</h2>
+          <p>${essay.summary}</p>
+          <span class="read-link">Read full essay &rarr;</span>
+        </div>
+      `).join('');
+    }
+
+    function filterEssays(category, btn) {
+      document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      renderCards(category);
+    }
+
+    function openEssay(id) {
+      const essay = essays.find(e => e.id === id);
+      if (!essay) return;
+      document.getElementById('essay-list-container').style.display = 'none';
+      document.getElementById('essay-reader-container').style.display = 'block';
+      document.getElementById('article-content').innerHTML = `
+        <div class="eyebrow">${essay.category} &bull; ${essay.readTime}</div>
+        <h1>${essay.title}</h1>
+        <div class="article-byline">By Andrew Laing &bull; Brisbane, Australia</div>
+        ${essay.body}
+      `;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function closeEssay() {
+      document.getElementById('essay-reader-container').style.display = 'none';
+      document.getElementById('essay-list-container').style.display = 'block';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function switchView(viewName) {
+      document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+      document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById(`view-${viewName}`).classList.add('active');
+      document.querySelector(`.nav-btn[data-target="${viewName}"]`).classList.add('active');
+      if (viewName === 'essays') closeEssay();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    renderCards();
+  </script>
+</body>
+</html>
